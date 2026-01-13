@@ -70,29 +70,6 @@ O Horta na Porta é um sistema desenvolvido para dois empreendedores que conecta
 
 - Angular CLI 17.1.2
 
-## 📋 Estrutura do Projeto
-horta-na-porta/
-├── backend/                 # API Spring Boot (Java)
-│   ├── src/main/java/com/hortanaporta/
-│   │   ├── controller/     # Controladores REST
-│   │   ├── model/         # Entidades JPA
-│   │   ├── repository/    # Repositórios Spring Data
-│   │   ├── service/       # Lógica de negócio
-│   │   └── security/      # Configuração de segurança
-│   ├── pom.xml            # Dependências Maven
-│   └── application.properties
-│
-├── frontend/              # Aplicação Angular
-│   ├── src/app/
-│   │   ├── components/   # Componentes reutilizáveis
-│   │   ├── pages/        # Páginas principais
-│   │   ├── services/     # Serviços HTTP
-│   │   └── models/       # Interfaces TypeScript
-│   ├── package.json      # Dependências npm
-│   └── angular.json      # Configuração Angular
-│
-└── README.md             # Esta documentação
-
 ## Acesso aos Serviços
 ## Frontend (Angular): http://localhost:4200
 
@@ -101,82 +78,82 @@ horta-na-porta/
 - Banco de Dados: localhost:3306
 
 ## 🔗 Endpoints da API
-- Autenticação
-POST /api/auth/login - Login com JWT
-POST /api/auth/register - Registro de usuário
-GET /api/auth/me - Informações do usuário
+## Autenticação
+- POST /api/auth/login - Login com JWT
+- POST /api/auth/register - Registro de usuário
+- GET /api/auth/me - Informações do usuário
 
-- Produtos
-GET /api/produtos - Listar todos produtos
-GET /api/produtos/{id} - Buscar produto por ID
-POST /api/produtos - Criar novo produto
-PUT /api/produtos/{id} - Atualizar produto
-DELETE /api/produtos/{id} - Excluir produto
+## Produtos
+- GET /api/produtos - Listar todos produtos
+- GET /api/produtos/{id} - Buscar produto por ID
+- POST /api/produtos - Criar novo produto
+- PUT /api/produtos/{id} - Atualizar produto
+- DELETE /api/produtos/{id} - Excluir produto
 
-- Pedidos
-GET /api/pedidos - Listar pedidos
-POST /api/pedidos - Criar novo pedido
-GET /api/pedidos/{id} - Detalhes do pedido
-PUT /api/pedidos/{id} - Atualizar pedido
-PUT /api/pedidos/{id}/status - Atualizar status
-DELETE /api/pedidos/{id} - Excluir pedido
+## Pedidos
+- GET /api/pedidos - Listar pedidos
+- POST /api/pedidos - Criar novo pedido
+- GET /api/pedidos/{id} - Detalhes do pedido
+- PUT /api/pedidos/{id} - Atualizar pedido
+- PUT /api/pedidos/{id}/status - Atualizar status
+- DELETE /api/pedidos/{id} - Excluir pedido
 
-- Clientes (Pessoas)
-GET /api/pessoas - Listar clientes
-POST /api/pessoas - Cadastrar cliente
-GET /api/pessoas/{id} - Detalhes do cliente
-PUT /api/pessoas/{id} - Atualizar cliente
-DELETE /api/pessoas/{id} - Excluir cliente
+## Clientes (Pessoas)
+- GET /api/pessoas - Listar clientes
+- POST /api/pessoas - Cadastrar cliente
+- GET /api/pessoas/{id} - Detalhes do cliente
+- PUT /api/pessoas/{id} - Atualizar cliente
+- DELETE /api/pessoas/{id} - Excluir cliente
 
-- Endereços
-GET /api/enderecos/cep/{cep} - Buscar endereço por CEP (ViaCEP)
-GET /api/enderecos/pessoa/{id} - Endereços por pessoa
-POST /api/enderecos - Cadastrar endereço
-PUT /api/enderecos/{id} - Atualizar endereço
-DELETE /api/enderecos/{id} - Excluir endereço
+## Endereços
+- GET /api/enderecos/cep/{cep} - Buscar endereço por CEP (ViaCEP)
+- GET /api/enderecos/pessoa/{id} - Endereços por pessoa
+- POST /api/enderecos - Cadastrar endereço
+- PUT /api/enderecos/{id} - Atualizar endereço
+- DELETE /api/enderecos/{id} - Excluir endereço
 
 ## 📊 Modelo de Dados
-- Pessoa (Cliente/Usuário)
-id: Long (Identificador único)
-nmPessoa: String (Nome completo)
-emailPessoa: String (E-mail)
-senhaPessoa: String (Senha criptografada)
-cpfPessoa: String (CPF)
-rolePessoa: String (ADMIN, CLIENTE)
-telefone: String
-dataCadastro: Date
+## Pessoa (Cliente/Usuário)
+- id: Long (Identificador único)
+- nmPessoa: String (Nome completo)
+- emailPessoa: String (E-mail)
+- senhaPessoa: String (Senha criptografada)
+- cpfPessoa: String (CPF)
+- rolePessoa: String (ADMIN, CLIENTE)
+- telefone: String
+- dataCadastro: Date
 
-- Produto
-cdProduto: Long (Código do produto)
-nmProduto: String (Nome do produto)
-descricao: String (Descrição)
-preco: BigDecimal (Preço unitário)
-estoque: Integer (Quantidade em estoque)
-categoria: String (verdura, legume, fruta, doce)
-organico: boolean (Produto orgânico)
-imagemUrl: String (URL da imagem)
+## Produto
+- cdProduto: Long (Código do produto)
+- nmProduto: String (Nome do produto)
+- descricao: String (Descrição)
+- preco: BigDecimal (Preço unitário)
+- estoque: Integer (Quantidade em estoque)
+- categoria: String (verdura, legume, fruta, doce)
+- organico: boolean (Produto orgânico)
+- imagemUrl: String (URL da imagem)
 
-- Pedido
-cdPedido: Long (Código do pedido)
-pessoa: Pessoa (Cliente)
-enderecoEntrega: Endereco (Endereço de entrega)
-status: String (PENDENTE, CONFIRMADO, ENTREGUE, CANCELADO)
-total: BigDecimal (Valor total)
-observacoes: String (Observações do pedido)
-itensPedido: List<ItemPedido> (Itens do pedido)
-dataPedido: LocalDateTime (Data do pedido)
+## Pedido
+- cdPedido: Long (Código do pedido)
+- pessoa: Pessoa (Cliente)
+- enderecoEntrega: Endereco (Endereço de entrega)
+- status: String (PENDENTE, CONFIRMADO, ENTREGUE, CANCELADO)
+- total: BigDecimal (Valor total)
+- observacoes: String (Observações do pedido)
+- itensPedido: List<ItemPedido> (Itens do pedido)
+- dataPedido: LocalDateTime (Data do pedido)
 
-- Endereço
-cdEndereco: Long (Código do endereço)
-cep: String (CEP)
-logradouro: String (Rua/Avenida)
-numero: String (Número)
-complemento: String (Complemento)
-bairro: String (Bairro)
-cidade: String (Cidade)
-estado: String (Estado - UF)
-pessoa: Pessoa (Proprietário do endereço)
-enderecoPrincipal: boolean (Endereço principal)
+## Endereço
+- cdEndereco: Long (Código do endereço)
+- cep: String (CEP)
+- logradouro: String (Rua/Avenida)
+- numero: String (Número)
+- complemento: String (Complemento)
+- bairro: String (Bairro)
+- cidade: String (Cidade)
+- estado: String (Estado - UF)
+- pessoa: Pessoa (Proprietário do endereço)
+- enderecoPrincipal: boolean (Endereço principal)
 
 ## 🔒 Sistema de Segurança
 - Autenticação JWT
@@ -228,10 +205,10 @@ enderecoPrincipal: boolean (Endereço principal)
 Este projeto está licenciado sob a Licença MIT - veja o arquivo LICENSE para detalhes.
 
 ## 👥 Equipe desenvolvedora
-Maria Luiza - Desenvolvedor Full Stack
-GitHub: @mariCareca
-Email: Mariaalmei92@gmail.com
+- Maria Luiza - Desenvolvedor Full Stack
+- GitHub: @mariCareca
+- Email: Mariaalmei92@gmail.com
 
-Miguel Augusto - Desenvolvedor Full Stack
-GitHub: @augustovv
-Email: augustot.carvalho@gmail.com
+- Miguel Augusto - Desenvolvedor Full Stack
+- GitHub: @augustovv
+- Email: augustot.carvalho@gmail.com
