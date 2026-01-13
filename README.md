@@ -212,3 +212,6 @@ Este projeto está licenciado sob a Licença MIT - veja o arquivo LICENSE para d
 ## Miguel Augusto - Desenvolvedor Full Stack
 - GitHub: @augustovv
 - Email: augustot.carvalho@gmail.com
+
+## Vídeo da sessão de administradores
+📺 Ver vídeo completo (2:18)(videohhp.mp4)
