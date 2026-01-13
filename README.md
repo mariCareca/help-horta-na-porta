@@ -1,5 +1,8 @@
 ## 🥬 Horta na Porta - Sistema de Gestão Completo
 
+[![Assista ao vídeo](https://img.youtube.com/vi/https://youtu.be/43gk4WkUtlA/0.jpg)](https://www.youtube.com/watch?v=https://youtu.be/43gk4WkUtlA)
+
+
 ## 📖 Sobre o Projeto
 O Horta na Porta é um sistema desenvolvido para dois empreendedores que conectam agricultura familiar com consumidores de produtos orgânicos.
 
