@@ -71,7 +71,7 @@ O Horta na Porta é um sistema desenvolvido para dois empreendedores que conecta
 - Angular CLI 17.1.2
 
 ## Acesso aos Serviços
-## Frontend (Angular): http://localhost:4200
+### Frontend (Angular): http://localhost:4200
 
 - Backend API: http://localhost:8080
 
@@ -211,4 +211,4 @@ Este projeto está licenciado sob a Licença MIT - veja o arquivo LICENSE para d
 
 ## Miguel Augusto - Desenvolvedor Full Stack
 - GitHub: @augustovv
-- Email: augustot.carvalho@gmail.com
+- Email: miguelaugustot.carvalho@gmail.com
