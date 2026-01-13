@@ -205,10 +205,10 @@ O Horta na Porta é um sistema desenvolvido para dois empreendedores que conecta
 Este projeto está licenciado sob a Licença MIT - veja o arquivo LICENSE para detalhes.
 
 ## 👥 Equipe desenvolvedora
-- Maria Luiza - Desenvolvedor Full Stack
+## Maria Luiza - Desenvolvedora Full Stack
 - GitHub: @mariCareca
 - Email: Mariaalmei92@gmail.com
 
-- Miguel Augusto - Desenvolvedor Full Stack
+## Miguel Augusto - Desenvolvedor Full Stack
 - GitHub: @augustovv
 - Email: augustot.carvalho@gmail.com
