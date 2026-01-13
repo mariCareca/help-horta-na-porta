@@ -213,5 +213,8 @@ Este projeto está licenciado sob a Licença MIT - veja o arquivo LICENSE para d
 - GitHub: @augustovv
 - Email: augustot.carvalho@gmail.com
 
+## Vídeo da sessão de usuários
+📺 Ver vídeo completo (2:51)(videopp.mp4)
+
 ## Vídeo da sessão de administradores
 📺 Ver vídeo completo (2:18)(videohhp.mp4)
