@@ -1,6 +1,8 @@
 ## 🥬 Horta na Porta - Sistema de Gestão Completo
 
 ## Vídeos do projeto
+<video src="videohhp.mp4" controls width="100%"></video>
+
 https://drive.google.com/drive/folders/18CJ9oOKohln7a9n-1x3dcc15OudFNXtz
 
 ## 📖 Sobre o Projeto
@@ -214,10 +216,4 @@ Este projeto está licenciado sob a Licença MIT - veja o arquivo LICENSE para d
 
 ## Miguel Augusto - Desenvolvedor Full Stack
 - GitHub: @augustovv
-- Email: augustot.carvalho@gmail.com
-
-## Vídeo da sessão de usuários
-📺 Ver vídeo completo (2:51)(videopp.mp4)
-
-## Vídeo da sessão de administradores
-📺 Ver vídeo completo (2:18)(videohhp.mp4)
+- Email: miguelaugustot.carvalho@gmail.com
